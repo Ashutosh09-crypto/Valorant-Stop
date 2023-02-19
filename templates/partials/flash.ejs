@@ -1,18 +1,19 @@
 <style>
-    .alert-warning {
+    /* .alert-warning {
         color: #ffffff;
         background-color: #0a0a0a;
         z-index: 199999;
         border-color: black;
-    }
+    } */
 
     .alert {
         margin-bottom: 0px;
     }
 </style>
-<div id="message" style="background-color: black; color: red;">
+<div id="message">
     <% if(message !='' ){ %>
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <div class="alert alert-warning alert-dismissible fade show" style="background-color: white; color: red;"
+            role="alert">
             <%= message %>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
